@@ -8,7 +8,7 @@ import com.test.util.SqlUtil;
 
 import java.util.List;
 
-public class StudentSerice {
+public class StudentService {
     public static void addStudent() {
 
         String name= InputUtil.nextLine("输入需要插入的学生名字:");

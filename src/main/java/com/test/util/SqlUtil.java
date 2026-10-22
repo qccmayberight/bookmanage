@@ -18,7 +18,7 @@ public class SqlUtil {
             factory = new SqlSessionFactoryBuilder()
                     .build(Resources.getResourceAsStream("mybatis-config.xml"));
         } catch (IOException e) {
-            log.warning("初始化失败:" + e.getMessage());
+            throw new IllegalStateException("MyBatis 初始化失败: " + e.getMessage(), e);
         }
     }
 //    public static SqlSession openSession() {
